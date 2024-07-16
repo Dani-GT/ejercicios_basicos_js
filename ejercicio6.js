@@ -19,7 +19,10 @@ if (i % 2 == 0) {
 //y cambia el mensaje en la décima vuelta a '¡Dormido!'.
 
 for (let i = 0; i < 10; i++) {
+    
+ if (i < 9) {
     console.log ('Intentando dormir 🐑')
-} if (i = 10) {
-    console.log ('¡Dormido!')
+} else {
+    console.log('¡Dormido!')
+}
 }
