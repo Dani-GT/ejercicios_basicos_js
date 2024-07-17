@@ -1,5 +1,11 @@
 const numbers = [1, 2, 3, 5, 45, 37, 58];
 
 function sumNumbers(numberList) {
-  // Completar código
-}
+  let resultado = 0;
+  for(let i=0; i < numberList.length; i++)
+    resultado += numberList[i];
+  return resultado;
+};
+
+sumNumbers(numbers)
+console.log(sumNumbers(numbers))
