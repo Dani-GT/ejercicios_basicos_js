@@ -12,5 +12,12 @@ const duplicates = [
     'soda'
   ];
   function removeDuplicates(list) {
-    // Completar
-  }
+    const uniques = [];
+    for (const item of list) {
+      if (!uniques.includes(item)){
+        uniques.push(item);
+      }
+    }
+      console.log(uniques)
+    }
+   removeDuplicates(duplicates)
