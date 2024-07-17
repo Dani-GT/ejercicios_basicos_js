@@ -7,5 +7,6 @@ function average(numberList) {
   } 
   return suma/numberList.length
 }
-average(numbers)
+
 console.log(average(numbers))
+average(numbers)
