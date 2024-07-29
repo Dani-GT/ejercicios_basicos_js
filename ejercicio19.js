@@ -7,3 +7,10 @@ const toys = [
     {id: 60, name: 'Nerf Blaster'},
     {id: 71, name: 'Sylvanian Families - Familia gato'}
 ];
+const notcatToys =[]
+for (const toy of toys) {
+    if (!toy.name.includes("gato")){
+        notcatToys.push(toy);
+    }
+}
+console.log(notcatToys)

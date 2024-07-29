@@ -11,3 +11,20 @@ const movies = [
     { name: "Eternal Sunshine of the Spotless Mind", durationInMinutes: 108 },
   ];
   
+  const largeMovies = [];
+  const mediumMovies = [];
+  const smallMovies  = [];
+
+  for (const movie of movies) {
+    if(movie.durationInMinutes < 100){
+      smallMovies.push(movie)
+    } else if (movie.durationInMinutes > 200){
+      largeMovies.push(movie)
+    } else {
+      mediumMovies.push(movie)
+    }
+  }
+
+  console.log("small: ",smallMovies)
+  console.log("medium: ",mediumMovies)
+  console.log("large: ",largeMovies)

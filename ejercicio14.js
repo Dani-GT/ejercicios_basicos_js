@@ -12,17 +12,17 @@ const words = [
     'code'
   ];
   function repeatCounter(list) {
-   const counter = [];
+   const counter = {};
 
    for (const word of list) {
 
-    if (counter.includes(word)){
+    if (counter[word]){
         counter[word]++;
-    }else {
+    } else {
         counter[word] = 1;
     }
    };
-   console.log (counter)
+   console.log(counter)
 }
 
     

@@ -5,3 +5,11 @@ const users = [
     { name: "Bruce", years: 32 },
     { name: "Khamala", years: 16 },
   ];
+
+  for (const user of users) {
+    if(user.years >= 18){
+      console.log (user, 'Usuario mayor de edad');
+    } else {
+      console.log (user, 'Usuario menor de edad');
+    }
+  }
